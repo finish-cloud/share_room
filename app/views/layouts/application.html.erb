@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    <div class="header-right-nav">
+      <div class="nav-item">
+          <%= link_to "トップ", rooms_path %>
+          <%= link_to 'ルーム登録', new_room_path%>
+          <%= link_to '登録済みルーム', rooms_show_path%>
+      </div>
+    </div>
     <%= yield %>
+    <footer>
+      <h1>Hello World!</h1>
+    </footer>
   </body>
+
 </html>
